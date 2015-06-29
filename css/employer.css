@@ -1,0 +1,71 @@
+.profilepix {
+    width: 100px;
+    height: 100px;
+}
+
+.profilepic {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.datatbl-btm-right{
+    float: right;
+}
+
+.datatbl-top-right{
+    float: right;
+    display: inline;
+}
+
+edit-profile-col{
+    width: 30%;
+}
+
+.profile-details {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.profile-details-email {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.profile-content-head {
+  padding-bottom: 9px;
+  border-bottom: 2px solid black;
+}
+
+.profile-content-subhead{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #eee;
+}
+
+.skillstbl {
+    font-size: 11px;   
+}
+
+.form-control {
+    font-size: 11px;
+}
+
+.interest-tbl {
+    font-size: 12px;
+}
+
+.interest-tbl>tbody>tr>td>input[type=checkbox]{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+.centerprofileblock {
+    padding-left: 30px;
+}
+
+#nonexeccomptable {
+    font-size: 12px;
+}
