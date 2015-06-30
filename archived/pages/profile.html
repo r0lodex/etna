@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>ETNA: My Profile</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Timeline CSS -->
+        <link href="../dist/css/timeline.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+        <link href="../css/employer.css" rel="stylesheet">
+
+        <!-- Morris Charts CSS -->
+        <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="../img/nav-logo.png" alt="" style="height: 45px; width: 200px;"></a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>Amanda Nur Qhaisaraa</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>18 May 2015</em>
+                                        </span>
+                                    </div>
+                                    <div>Your application to attending course OEF002: Human Capital Development has been approved. Your name had been registered for attending the course. <br>Thank you. - HR</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>ETNA Admin</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>16 May 2015</em>
+                                        </span>
+                                    </div>
+                                    <div>Welcome to ETNA! Please set up your profile to get started. Hope you will enjoy our service!</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>Read All Messages</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-pencil fa-fw"></i> 1 course approved
+                                        <span class="pull-right text-muted small">10 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-pencil fa-fw"></i> 2 course rejected
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li class="sidebar-search">
+                                <div class="input-group custom-search-form">
+                                    <div class="panel-body">
+                                        <div class="profilepic">
+                                            <img class="profilepix" src="../img/profilepic.png">   
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /input-group -->
+                            </li>
+                            <li>
+                                <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user fa-fw"></i> Personal<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="profile.html">View Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="edit-profile.html">Edit Profile</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pencil fa-fw"></i> Courses<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="corecourse.html">Core Competency</a>
+                                    </li>
+                                    <li>
+                                        <a href="itskills.html">IT Skills &amp; Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="cert.html">Certificates</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-desktop fa-fw"></i> Assessment<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="current-verify.html">Current Assessment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Future Assessment</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pie-chart fa-fw"></i> Report<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="report.html">Assessment Summary</a>
+                                    </li>
+                                    <li>
+                                        <a href="scorecard.html">Score Card</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">My Profile</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <ul id="profileTab" class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#background" id="bgTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Background</a></li>
+                                    <li role="presentation"><a href="#company" id="compTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Company</a></li>
+                                    <li role="presentation"><a href="#education" id="eduTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Education</a></li>
+                                    <li role="presentation"><a href="#skills" id="skillsTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Skills</a></li>
+                                    <li role="presentation"><a href="#workexp" id="workexpTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Working Experience</a></li>
+                                    <li role="presentation"><a href="#interest" id="intTab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Interest</a></li>        
+                                </ul> 
+                            </div>
+                            <div class="panel-body">
+                                <div id="myTabContent" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="background" aria-labelledBy="bgTab">
+                                        <div class="row">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="fullname">Full Name:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Muhammad Sobirin b. Kamaruzaman</div>
+                                                        </div>        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="ic">IC Number:</label>
+                                                        <div class="col-sm-8">          
+                                                            <div class="profile-details">901114-14-5717</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">    
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="sex">Gender:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Male</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="ic">Date of Birth:</label>
+                                                        <div class="col-sm-8">          
+                                                            <div class="profile-details">14 November 1990</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="address">Address:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">No 80 Jalan Raya 6, Taman Serdang Jaya, Seri Kembangan</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="country">Country:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Malaysia</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="state">State:</label>
+                                                        <div class="col-sm-8">          
+                                                            <div class="profile-details">Selangor</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="postcode">Postcode:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">43300</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="email">Email:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details-email">zobrin90@gmail.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="phone">Phone:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">013-2378517</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form> 
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="company" aria-labelledBy="compTab">
+                                        <div class="row">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="compname">Name:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Fiscal Digest Sdn. Bhd.</div>
+                                                        </div>        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="compaddress">Address:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">B-2-8, Block B, Jalan GC 3, Glomac Cyberjaya</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="country">Country:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Malaysia</div>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="state">State:</label>
+                                                        <div class="col-sm-8">          
+                                                            <div class="profile-details">Selangor</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="email">Email:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details-email">sobirin@fiscald.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="phone">Phone:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">03-83119325</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="phone">Fax:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">03-62045776</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-profile-col" for="phone">Website:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details-email">www.fiscald.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="profile-content-head">Current Career</h4>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="CIndustry">Industry:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Consulting (IT, Science, Engineering and Technical)</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="CDept">Department:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Information Technology</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="CJoblvl">Job Level:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Executive</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="CPosition">Position:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Business Analyst</div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="profile-content-head">Future Career</h4>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="FIndustry">Industry:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Consulting (IT, Science, Engineering and Technical)</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="FJoblvl">Job Level:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Executive</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4 edit-career-col" for="FPosition">Position:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="profile-details">Assistant Project Lead</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form> 
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="education" aria-labelledBy="eduTab">
+                                        <h3 class="profile-content-head">EDUCATION</h3>
+                                        <form class="form-horizontal" role="form">
+                                            <h4 class="profile-content-subhead">Academic Qualification 1</h4>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4 edit-profile-col" for="edulvl1" style="width: 100px;">Education Level:</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="profile-details">Diploma</div>
+                                                    </div>        
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4 edit-profile-col" for="majoredu1" style="width: 100px;">Major in:</label>
+                                                    <div class="col-sm-8">          
+                                                        <div class="profile-details">Computer Systems Operation & Management</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4 edit-profile-col" for="eduuni1" style="width: 100px;">Institution:</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="profile-details">Kolej Poly-Tech Mara KL</div>
+                                                    </div>        
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4 edit-profile-col" for="gradyear1" style="width: 100px;">Graduate Year:</label>
+                                                    <div class="col-sm-8">          
+                                                        <div class="profile-details">3 March 2011</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <h3 class="profile-content-head">LANGUAGE</h3>
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"><h4>Oral</h4></div>
+                                        <div class="col-sm-4"><h4>Written</h4></div>
+                                        <div class="col-sm-4"><h4>Malay</h4></div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Good</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Good</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4"><h4>English</h4></div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Good</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Good</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4"><h4>Mandarin</h4></div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Poor</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="profile-details">Poor</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="skills" aria-labelledBy="skillsTab">
+                                        <h4 class="profile-content-head">TECHNOLOGY SKILLS</h4>
+                                        <table id="skills-table" class="skillstbl" border="0">
+                                            <tr>
+                                                <td><input id="Adobe" type="checkbox" onclick="return false;" name="Adobe" checked/><label for="Adobe">Adobe</label></td>
+                                                <td><input id="IT-architecture" type="checkbox" onclick="return false;" name="IT-architecture" /><label for="IT-architecture">IT Architecture</label></td>
+                                                <td><input id="datamgmt" type="checkbox" onclick="return false;" name="datamgmt" /><label for="datamgmt">Data Management</label></td>
+                                                <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_4" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$4" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_4">Inventor</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_130" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$130" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_130">Vmware vSphere</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_5" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$5" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_5">AutoCAD</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_6" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$6" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_6">Data Center</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_7" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$7" checked /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_7">Design & Architecture</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_8" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$8" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_8">Routing and Switching</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_9" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$9" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_9">Security</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_10" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$10" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_10">Service Provider</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_11" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$11" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_11">Service Provider Operations</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_12" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$12" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_12">Video</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_13" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$13" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_13">Voice/UC</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_14" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$14" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_14">Wireless</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_15" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$15" checked/><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_15">PC and Network</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_16" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$16" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_16">Wireless</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_17" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$17" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_17">Security</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_18" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$18" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_18">Mobile Apps</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_19" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$19" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_19">Software Testing</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_20" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$20" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_20">HTML</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_21" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$21" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_21">EC Council</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_22" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$22" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_22">HP-UX System Administration</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_23" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$23" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_23">IBM Business Analytics</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_24" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$24" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_24">IBM Collaboration Solutions</label></td>
+                                            </tr>
+                                        </table>
+                                        <h4 class="profile-content-head">GENERAL COMPETENCY SKILLS</h4>
+                                        <table style="font-size:9px;" id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills" class="generalskillstbl" border="0">
+                                            <tr>
+                                                <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_0" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$0" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_0">Written</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_1" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$1" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_1">Verbal</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_2" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$2" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_2">English Language</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_3" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$3" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_3">Presentation</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_4" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$4" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_4">Interpersonal Communication</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_5" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$5" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_5">Business Communication</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_6" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$6" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_6">NLP</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_7" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$7" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_7">Coaching & Mentoring</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_8" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$8" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_8">Managing Change</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_9" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$9" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_9">Strategic Management</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_10" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$10" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_10">Strategic Communication</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_11" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$11" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_11">Leading & Visioning</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_12" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$12" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_12">Valuing Diversity</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_13" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$13" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_13">Building Trust</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_14" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$14" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_14">Managerial Skills</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_15" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$15" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_15">Supervisory Skills</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_16" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$16" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_16">Project Management</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_17" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$17" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_17">People Management</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_18" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$18" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_18">Goal Setting</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_19" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$19" checked/><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_19">Teamwork</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_20" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$20" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_20">Negotiation</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_21" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$21" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_21">Workplace Health & Fitness</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_22" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$22" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_22">Self & Team Motivation</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_23" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$23" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_23">Conflict Management</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_24" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$24" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_24">Delegation</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_25" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$25" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_25">Problem Solving & Decision Making</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_26" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$26" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_26">Creativity & Innovation</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_27" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$27" checked/><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_27">Office Admin Skills</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_28" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$28" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_28">Time & Stress Management</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_29" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$29" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_29">Decision Making</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_30" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$30" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_30">Assertiveness</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_31" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$31" /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_31">Persuasive Skills</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_32" type="checkbox" onclick="return false;" name="ctl00$ctl00$Content$ContentPanel$pnlGeneralSkills_content$cbGeneralSkills$32" checked /><label for="ctl00_ctl00_Content_ContentPanel_pnlGeneralSkills_content_cbGeneralSkills_32">Self Improvement/Motivation</label></td><td></td><td></td>
+                                            </tr>
+                                        </table>  
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="workexp" aria-labelledBy="workexpTab">
+                                        <h3 class="profile-content-head">EMPLOYMENT HISTORY</h3>
+                                        <form class="form-horizontal" role="form">
+                                            <h4 class="profile-content-subhead">Working Experience 1</h4>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2 edit-profile-col" for="edulvl1" style="width: 100px;">Company Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="profile-details">Sifu Technology Sdn. Bhd.</div>
+                                                    </div>        
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2 edit-profile-col" for="majoredu1" style="width: 100px;">Career Summary:</label>
+                                                    <div class="col-sm-8">          
+                                                        <div class="profile-details-email">Develop website, web programming, and webmaster. Using PHP as main language.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2 edit-profile-col" for="eduuni1" style="width: 120px;">Employment Period:</label>
+                                                    <div class="col-sm-8">
+                                                        <label><input type="date" value="2011-09-10" class="form-control date" name="gradyear1" style="width:130px;" id="gradyear1" readonly> <div class="text-center">To</div>
+                                                            <input type="date" value="2014-04-28" class="form-control date" name="gradyear1" style="width:130px;" id="gradyear1" readonly>
+                                                        </label>   
+                                                    </div>        
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="interest" aria-labelledBy="intTab">
+                                        <h3 class="profile-content-head">SPORTS</h3>
+                                        <table id="skills-table" class="interest-tbl" border="0">
+                                            <tr>
+                                                <td><input id="Adobe" type="checkbox" name="Adobe" checked/><label for="Adobe">Soccer</label></td>
+                                                <td><input id="IT-architecture" type="checkbox" name="IT-architecture" /><label for="IT-architecture">Cricket</label></td>
+                                                <td><input id="datamgmt" type="checkbox" name="datamgmt" /><label for="datamgmt">Basketball</label></td>
+                                                <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_4" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$4" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_4">Baseball</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_130" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$130" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_130">Volleyball</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_5" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$5" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_5">Field Hockey</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_6" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$6" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_6">Rugby</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_7" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$7" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_7">Ice Hockey</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_8" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$8" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_8">Tennis</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_9" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$9" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_9">Table Tennis</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_10" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$10" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_10">Badminton</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_11" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$11" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_11">Golf</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_12" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$12" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_12">Go-Karting</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_13" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$13" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_13">Bowling</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_14" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$14" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_14">Swimming</label></td>
+                                            </tr><tr>
+                                            <td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_15" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$15" checked/><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_15">Cycling</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_16" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$16" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_16">Paintball</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_17" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$17" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_17">Futsal</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_18" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$18" checked/><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_18">E-sports</label></td><td><input id="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_19" type="checkbox" name="ctl00$ctl00$Content$ContentPanel$pnlSkills_content$cbSkills$19" /><label for="ctl00_ctl00_Content_ContentPanel_pnlSkills_content_cbSkills_19">Mountain Climbing</label></td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="profile-content-head">HOBBIES</h3>
+                                        <textarea readonly class="form-control" style="font-size: 12px;" rows="4" id="compaddress" placeholder="Seperate each hobbies by comma or a new line">Travelling, Eating, Watching Movies</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Profile picture</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="profilepic">
+                                    <img class="profilepix" src="../img/profilepic.png">   
+                                </div>
+                                <div class="profilesummary">
+                                    <h4 style="padding-left: 15px;">Upload your profile picture</h4>
+                                    <div class="form-group centerprofileblock">
+                                        <button class="btn btn-default" onclick="register()" href="#" role="button">Insert Image/Photo</button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Profile Options</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <button class="btn btn-info" formaction="edit-profile.html" style="width: 80px;">Edit</button><label class="control-label" style="padding-left: 5px; font-size:13px;" for="editprofile">Edit your profile</label>    
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-warning" formaction="profile.html" style="width: 80px">Export</button><label class="control-label" style="padding-left: 5px; font-size:13px;" for="restoreprofile">Export your profile</label>    
+                                    </div>
+                                </form>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- DataTables JavaScript -->
+        <script src="../bower_components/datatables/media/js/jquery.dataTables.js"></script>
+        <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#dataTbl-coursesummary').DataTable({
+                    responsive: true,
+                    "lengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+                    searching: false,
+                    "dom": '<"top"li>rt<"bottom"f<"datatbl-btm-right"p>><"clear">'
+                });
+            });
+        </script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <!--        <script src="../bower_components/raphael/raphael-min.js"></script>
+<script src="../bower_components/morrisjs/morris.min.js"></script>
+<script src="../js/morris-data.js"></script>-->
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../dist/js/sb-admin-2.js"></script>
+
+    </body>
+
+</html>

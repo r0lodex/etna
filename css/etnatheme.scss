@@ -1,0 +1,18 @@
+@import '../bower_components/materialize/sass/materialize';
+
+body {
+	background: url(../img/bg.png);
+}
+
+.brand-logo { margin-left: 10px; }
+
+.content { padding-top: 40px; }
+
+#login-form {
+	background: #FFF;
+	padding: 20px;
+	width: 400px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
