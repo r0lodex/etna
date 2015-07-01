@@ -1,132 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="etna">
 <head>
 	<title>ETNA</title>
-	<link rel="stylesheet" type="text/css" href="../css/etnatheme.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/etnatheme.css">
 </head>
-<body>
-	<div id="sidebar">
+<body ng-controller="rootCtrl">
+	<div id="sidebar" ng-controller="sidebarCtrl">
 		<div class="profile-info center">
-			<img class="circle" src="../archived/img/profilepic.png">
-			<small>Muhammad Sobirin bin Kamaruzaman</small>
+			<img class="circle" ng-src="{{ userdata.image }}">
+			<small>{{ userdata.name }}</small>
 		</div>
 		<div class="links">
-			<a href="#" class="active collection-item"><i class="mdi-navigation-apps"></i> Dashboard</a>
-			<a href="#" class="collection-item"><i class="mdi-action-account-circle"></i> Personal</a>
-			<a href="#" class="collection-item"><i class="mdi-communication-clear-all"></i> Courses</a>
-			<a href="#" class="collection-item"><i class="mdi-maps-layers"></i> Assessment</a>
-			<a href="#" class="collection-item"><i class="mdi-action-assessment"></i> Report</a>
+			<a href="#/dashboard" ng-class="{ active : currentpage('/dashboard') }" class="collection-item"><i class="mdi-navigation-apps"></i> Dashboard</a>
+			<a href="#/personal" ng-class="{ active : currentpage('/personal') }" class="collection-item"><i class="mdi-action-account-circle"></i> Personal</a>
+			<a href="#/courses" ng-class="{ active : currentpage('/courses') }" class="collection-item"><i class="mdi-communication-clear-all"></i> Courses</a>
+			<a href="#/assessment" ng-class="{ active : currentpage('/assessment') }" class="collection-item"><i class="mdi-maps-layers"></i> Assessment</a>
+			<a href="#/report" ng-class="{ active : currentpage('/report') }" class="collection-item"><i class="mdi-action-assessment"></i> Report</a>
 		</div>
 	</div>
 
-	<section id="content">
-		<h3 class="content-title blue-text"><i class="mdi-navigation-apps"></i> Dashboard</h3>
-		<hr>
-		<div class="row">
+	<!-- All templates will be rendered here -->
+	<section id="content" ng-view></section>
 
-			<!-- CARDS -->
-			<div class="col s12 m6">
-				<div class="card">
-					<div class="card-content">
-						<span class="card-title blue-text">Skill Assessment</span>
-							<p>
-								I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.
-							</p>
-					</div>
-					<div class="card-action">
-						<a href="#" class="blue-text">Start My Assessment <i class="mdi-navigation-arrow-forward"></i></a>
-					</div>
-				</div>
-			</div>
+	<!-- Required Dependencies -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-materialize/src/angular-materialize.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
+	<script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+	<script src="../bower_components/angular-cookies/angular-cookies.min.js"></script>
 
-			<!-- CARDS -->
-			<div class="col s12 m6">
-				<div class="card">
-					<div class="card-content">
-						<span class="card-title green-text">Assessment Report</span>
-							<p>
-								I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.
-							</p>
-					</div>
-					<div class="card-action">
-						<a href="#" class="green-text">View My Report <i class="mdi-navigation-arrow-forward"></i></a>
-					</div>
-				</div>
-			</div>
+	<!-- Minified Javascript -->
+	<script src="../static/js/min/etna_app-min.js"></script>
 
-			<!-- CARDS -->
-			<div class="col s12 m12">
-				<div class="card">
-					<div class="card-content">
-						<span class="card-title pink-text">Course Application Summary</span>
-						<table class="bordered">
-							<thead>
-								<tr>
-									<th>Code</th>
-									<th>Name</th>
-									<th>Core Competency</th>
-									<th>Skills</th>
-									<th>Date</th>
-									<th>Duration</th>
-									<th>Venue</th>
-									<th>Status</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>0EF001</td>
-									<td>Recognizing &amp; Resolving Conflict Management</td>
-									<td>Organizational Effectiveness</td>
-									<td>Conflict Management</td>
-									<td>15/04/2015</td>
-									<td>3 Days</td>
-									<td>PWTC KL</td>
-									<td>Rejected</td>
-								</tr>
-								<tr>
-									<td>0EF002</td>
-									<td>Business Management The Hard Way</td>
-									<td>Managerial Stuff</td>
-									<td>Business &amp; Trade</td>
-									<td>15/05/2015</td>
-									<td>1 Day</td>
-									<td>Putrajaya</td>
-									<td>Accepted</td>
-								</tr>
-								<tr>
-									<td>0EF001</td>
-									<td>Recognizing &amp; Resolving Conflict Management</td>
-									<td>Organizational Effectiveness</td>
-									<td>Conflict Management</td>
-									<td>15/04/2015</td>
-									<td>3 Days</td>
-									<td>PWTC KL</td>
-									<td>Rejected</td>
-								</tr>
-								<tr>
-									<td>0EF002</td>
-									<td>Business Management The Hard Way</td>
-									<td>Managerial Stuff</td>
-									<td>Business &amp; Trade</td>
-									<td>15/05/2015</td>
-									<td>1 Day</td>
-									<td>Putrajaya</td>
-									<td>Accepted</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card-action">
-						<a href="#" class="pink-text">View All <i class="mdi-navigation-arrow-forward"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+	<!--
+	// Use this dependencies if you are not using any javascript compilers.
+	<script src="../js/etna_app.js"></script>
+	<script src="../js/_controllers.js"></script>
+	<script src="../js/_directives.js"></script>
+	<script src="../js/_factories.js"></script>
+	-->
 </body>
 </html>

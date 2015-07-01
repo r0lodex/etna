@@ -1,0 +1,48 @@
+.ui-notification {
+    position: fixed;
+    z-index: 1500;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    color: $btn-primary-color;
+    background: #FFF;
+    @include transition(all ease 0.5s);
+    &.killed {
+        opacity: 0;
+        @include transition(opacity ease 1s);
+    }
+    & > h3 {
+        display: block;
+        margin: 10px 10px 0 10px;
+        padding: 0 0 5px 0;
+        text-align: left;
+        font-size: $font-size-base;
+        font-weight: bold;
+        border-bottom: 1px solid fadeout($btn-primary-color, 70%);
+    }
+    & a {
+        color: $btn-primary-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & > .message {
+        margin: 10px 10px 10px 10px;
+    }
+    &.warning {
+        color: $brand-warning;
+    }
+    &.error {
+        color: $brand-danger;
+    }
+    &.success {
+        color: $brand-success;
+    }
+    &.info {
+        color: $brand-info;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+}
