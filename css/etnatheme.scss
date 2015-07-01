@@ -16,3 +16,44 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
+
+
+$sidebarwidth: 180px;
+#sidebar {
+	background: $primary-color;
+	position: fixed;
+	left: 0;
+	width: $sidebarwidth;
+	height: 100%;
+
+	.profile-info {
+		padding: 20px;
+		img {
+			width: 100%;
+		}
+		color: #FFF;
+	}
+
+	.links {
+		a {
+			color: #FFF;
+			display: block;
+			padding: 10px;
+			position: relative;
+			&:hover, &.active {
+				background: color('blue', 'lighten-4');
+				color: $primary-color;
+			}
+			i {
+			}
+		}
+	}
+}
+
+#content {
+	margin-left: $sidebarwidth;
+	padding: 20px;
+	.content-title {
+		margin-top: 0;
+	}
+}
