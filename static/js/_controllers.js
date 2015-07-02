@@ -1,7 +1,17 @@
 angular.module('etna')
-	.controller('rootCtrl', ['$log', '$scope', function($log, $scope) {
+	.controller('rootCtrl', ['$log', '$scope', 'amMoment', function($log, $scope, amMoment) {
 		// This is the parent controller of every controller below
-		$log.info('root')
+		$log.info('root');
+
+		// Table Sort By Headers
+		$scope.sort = function(field) {
+			$scope.sort.field = field;
+			$scope.sort.order = !$scope.sort.order;
+		}
+		$scope.date = function(str) {
+			var a = Date.parse(str)
+			return moment(a).format('DD MMM YYYY');
+		}
 	}])
 
 	.controller('sidebarCtrl', ['$log', '$scope', 'User', function($log, $scope, User) {
