@@ -7,8 +7,10 @@ var etna = angular.module('etna', [
 	'ngRoute',
 	'ngResource',
 	'ngCookies',
-	'ui.materialize'
+	'ui.materialize',
+	'angularMomentHijri'
 ])
+
 .run(['$rootScope', '$location', function($rootScope, $location) {
 	$rootScope.currentpage = function(path) {
 		// Returns boolean if the current page is 'path'
@@ -43,3 +45,13 @@ var etna = angular.module('etna', [
 		}
 	);
 }])
+
+// Converts keys from JSON e.g course_code to Course Code.
+.filter('labelCase', function() {
+	return function(input) {
+		input = input.replace(/_/g, ' ');
+		// var k = input[0].toUpperCase() + input.slice(1);
+			// k.replace('/_/g', ' ');
+		return input;
+	}
+})
