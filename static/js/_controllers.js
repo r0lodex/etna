@@ -22,8 +22,11 @@ angular.module('etna')
 	}])
 
 	.controller('dashboardCtrl', ['$log', '$scope', 'CourseSummary', function($log, $scope, CourseSummary) {
-		$log.info(CourseSummary)
-		$scope.summary = CourseSummary;
+		$scope.summary = {
+			fields: Object.keys(CourseSummary[0]),
+			data: CourseSummary
+		}
+		$log.info($scope.summary.fields)
 	}])
 
 	.controller('personalCtrl', ['$log', '$scope', function($log, $scope) {

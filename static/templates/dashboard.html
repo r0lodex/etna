@@ -39,27 +39,25 @@
 		<div class="card">
 			<div class="card-content">
 				<span class="card-title pink-text">Course Application Summary</span>
-				<table class="bordered">
+				<table class="hoverable">
 					<thead>
 						<tr>
-							<th>Code</th>
-							<th>Name</th>
-							<th>Competency</th>
-							<th>Skills</th>
-							<th>Date</th>
-							<th>Venue</th>
-							<th>Status</th>
+							<th ng-repeat="field in summary.fields" ng-click="sort(field)">
+								<i ng-show="sort.field == field && !sort.order" class="mdi-hardware-keyboard-arrow-down"></i>
+								<i ng-show="sort.field == field && sort.order" class="mdi-hardware-keyboard-arrow-up"></i>
+								{{ field | labelCase }}
+							</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="item in summary">
-							<td>{{ item.course_code }}</td>
-							<td>{{ item.course_name }}</td>
-							<td>{{ item.core_competency }}</td>
-							<td>{{ item.skills }}</td>
-							<td>{{ item.date | date: 'D M Y' }}</td>
-							<td>{{ item.venue }}</td>
-							<td><span class="status-{{ item.status }}">{{ item.status }}</span></td>
+						<tr ng-repeat="item in summary.data | orderBy:sort.field : sort.order">
+							<td ng-repeat="field in summary.fields">
+								<span ng-switch="field">
+									<span ng-switch-when="date">{{ date(item[field]) }}</span>
+									<span ng-switch-when="status" ng-class="status-{{ item[field] }}">{{ item[field] }}</span>
+									<span ng-switch-default>{{ item[field] }}</span>
+								</span>
+							</td>
 						</tr>
 					</tbody>
 				</table>
