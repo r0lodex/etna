@@ -18,6 +18,8 @@ body {
 	box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 
+table th { text-transform: capitalize; }
+
 $sidebarwidth: 180px;
 #sidebar {
 	background: $primary-color;
