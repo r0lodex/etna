@@ -6,27 +6,18 @@
 </head>
 <body ng-controller="rootCtrl">
 	<div id="sidebar" ng-controller="sidebarCtrl">
-		<div class="profile-info center">
-			<img class="circle" ng-src="{{ userdata.image }}">
-			<small>{{ userdata.name }}</small>
-		</div>
-		<div class="links">
-			<a href="#/dashboard" ng-class="{ active : currentpage('/dashboard') }" class="collection-item"><i class="mdi-navigation-apps"></i> Dashboard</a>
-			<a href="#/profile" ng-class="{ active : currentpage('/profile') }" class="collection-item"><i class="mdi-action-account-circle"></i> Personal</a>
-			<a href="#/courses" ng-class="{ active : currentpage('/courses') }" class="collection-item"><i class="mdi-communication-clear-all"></i> Courses</a>
-			<a href="#/assessment" ng-class="{ active : currentpage('/assessment') }" class="collection-item"><i class="mdi-maps-layers"></i> Assessment</a>
-			<a href="#/report" ng-class="{ active : currentpage('/report') }" class="collection-item"><i class="mdi-action-assessment"></i> Report</a>
-		</div>
+		<!-- Please see the 'navigation' directive -->
+		<navigation></navigation>
 	</div>
 
 	<!-- All templates will be rendered here -->
-	<section id="content" ng-view></section>
+	<section id="content" class="container-fluid">
+		<main ng-view></main>
+	</section>
 
 	<!-- Required Dependencies -->
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
 	<script src="../bower_components/angular/angular.min.js"></script>
-	<script src="../bower_components/angular-materialize/src/angular-materialize.js"></script>
 	<script src="../bower_components/angular-route/angular-route.min.js"></script>
 	<script src="../bower_components/angular-resource/angular-resource.min.js"></script>
 	<script src="../bower_components/angular-cookies/angular-cookies.min.js"></script>
@@ -34,6 +25,10 @@
 	<script src="../bower_components/angular-moment-hijri/angular-moment-hijri.min.js"></script>
 	<script src="../bower_components/Chart.js/Chart.min.js"></script>
 	<script src="../bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+	<script src="../bower_components/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+	<script src="../bower_components/angular-modal-service/dst/angular-modal-service.min.js"></script>
+	<script src="../bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+	<script src="../bower_components/angular-1.3.7-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
 	<!-- Minified Javascript -->
 	<script src="../static/js/min/etna_app-min.js"></script>

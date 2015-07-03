@@ -1,0 +1,9 @@
+<span>
+	<div class="profile-info">
+		<img class="img-circle" ng-src="{{ userdata.background.avatar }}">
+		<p ng-bind="userdata.background.fullname"></p>
+	</div>
+	<ul class="links list-unstyled">
+		<li ng-repeat="nav in navigation" ng-class="{ active : currentpage('/'+ nav.name ) }"><a ng-href="#/{{ nav.name }}"><i class="icon icon-{{ nav.icon }}"></i> {{ nav.name }}</a></li>
+	</ul>
+</span>

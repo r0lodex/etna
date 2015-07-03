@@ -1,68 +1,63 @@
-<h3 class="content-title blue-text"><i class="mdi-navigation-apps"></i> Dashboard</h3>
-
 <div class="row">
-
-	<!-- CARDS -->
-	<div class="col s12 m6">
-		<div class="card">
-			<div class="card-content">
-				<span class="card-title blue-text">Skill Assessment</span>
-					<p>
-						Description text for Skill Assessment.
-					</p>
-			</div>
-			<div class="card-action">
-				<a href="#" class="blue-text">Start My Assessment <i class="mdi-navigation-arrow-forward"></i></a>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="cards cards-primary">
+			<h1 class="cards-header">Skills Profeciency</h1>
+			<div class="cards-content">
+				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<canvas id="bar" class="chart chart-bar" data="skill_chart.data" labels="skill_chart.labels"></canvas>
+				<a class="btn btn-default btn-block">Start Skills Assessment</a>
 			</div>
 		</div>
 	</div>
-
-	<!-- CARDS -->
-	<div class="col s12 m6">
-		<div class="card">
-			<div class="card-content">
-				<span class="card-title green-text">Assessment Report</span>
-					<p>
-						Description text for Assessment Report.
-					</p>
-			</div>
-			<div class="card-action">
-				<a href="#" class="green-text">View My Report <i class="mdi-navigation-arrow-forward"></i></a>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="cards cards-dark">
+			<h1 class="cards-header">Assessment Report</h1>
+			<div class="cards-content">
+				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<canvas id="doughnut" class="chart chart-doughnut" data="ass.data" labels="ass.labels"></canvas>
+				<a class="btn btn-default btn-block">View Full Report</a>
 			</div>
 		</div>
 	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="cards cards-default">
+			<h1 class="cards-header">Score Card</h1>
+			<div class="cards-content">
+				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<canvas id="radar" class="chart chart-radar" data="score_card.data" labels="score_card.labels"></canvas>
+				<a class="btn btn-default btn-block">View Score Card</a>
+			</div>
+		</div>
+	</div>
+</div>
 
-	<!-- CARDS -->
-	<div class="col s12 m12">
-		<div class="card">
-			<div class="card-content">
-				<span class="card-title pink-text">Course Application Summary</span>
-				<table class="hoverable">
-					<thead>
-						<tr>
-							<th ng-repeat="field in summary.fields" ng-click="sort(field)">
-								<i ng-show="sort.field == field && !sort.order" class="mdi-hardware-keyboard-arrow-down"></i>
-								<i ng-show="sort.field == field && sort.order" class="mdi-hardware-keyboard-arrow-up"></i>
-								{{ field | labelCase }}
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr ng-repeat="item in summary.data | orderBy:sort.field : sort.order">
-							<td ng-repeat="field in summary.fields">
-								<span ng-switch="field">
-									<span ng-switch-when="date">{{ date(item[field]) }}</span>
-									<span ng-switch-when="status" ng-class="status-{{ item[field] }}">{{ item[field] }}</span>
-									<span ng-switch-default>{{ item[field] }}</span>
-								</span>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="card-action">
-				<a href="#" class="pink-text">View All <i class="mdi-navigation-arrow-forward"></i></a>
-			</div>
+
+<div class="cards">
+	<h1 class="cards-header">Course Application Summary</h1>
+	<div class="cards-content">
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th ng-repeat="field in summary.fields" ng-click="sort(field)">
+							{{ field | labelCase }} 
+							<i ng-show="sort.field == field && !sort.order" class="icon icon-chevron-small-down"></i>
+							<i ng-show="sort.field == field && sort.order" class="icon icon-chevron-small-up"></i>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in summary.data | orderBy:sort.field : sort.order">
+						<td ng-repeat="field in summary.fields" class="row-{{ field }}">
+							<span ng-switch="field">
+								<span ng-switch-when="date">{{ date(item[field]) }}</span>
+								<span ng-switch-when="status" ng-class="status-{{ item[field] }}">{{ item[field] }}</span>
+								<span ng-switch-default>{{ item[field] }}</span>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>

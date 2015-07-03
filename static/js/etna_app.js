@@ -7,8 +7,9 @@ var etna = angular.module('etna', [
 	'ngRoute',
 	'ngResource',
 	'ngCookies',
-	'ui.materialize',
+	'ui.bootstrap',
 	'angularMomentHijri',
+	'720kb.datepicker',
 	'chart.js'
 ])
 
@@ -16,7 +17,11 @@ var etna = angular.module('etna', [
 	$rootScope.currentpage = function(path) {
 		// Returns boolean if the current page is 'path'
 		return $location.path().indexOf(path) == 0;
-	}
+	};
+
+	$rootScope.section_title = function() {
+		return $location.path().replace('/', '').toUpperCase();
+	};
 }])
 
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -46,6 +51,35 @@ var etna = angular.module('etna', [
 		}
 	);
 }])
+
+.directive('navigation', function() {
+	return {
+		restrict: 'E',
+		templateUrl: '/static/templates/directives/navigation.html',
+		replace: true
+	}
+})
+
+.directive('formField', function() {
+	return {
+		restrict: 'E',
+		templateUrl: '/static/templates/directives/form-field.html',
+		replace: true,
+		scope: {
+			record: '=',
+			options: '=',
+			field: '@',
+			fieldtype: '@',
+			required: '@',
+			label: '@'
+		},
+		link: function(scope, elem, attr) {
+			scope.$on('submit:invalid', function() {
+				scope[scope.field].$setDirty();
+			});
+		}
+	};
+})
 
 // Converts keys from JSON e.g course_code to Course Code.
 .filter('labelCase', function() {

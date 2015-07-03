@@ -1,20 +1,26 @@
-<h3 class="content-title blue-text"><i class="mdi-action-account-circle"></i> Profile</h3>
-
-<div class="row" ng-if="showTabs">
-    <div class="col s12">
-        <ul class="tabs" tabs>
-            <li class="tab col s3"><a class="active" href="#profile_background">Background</a></li>
-            <li class="tab col s3"><a href="#profile_company">Company</a></li>
-            <li class="tab col s3"><a href="#profile_education">Education</a></li>
-            <li class="tab col s3"><a href="#profile_skills">Skills</a></li>
-            <li class="tab col s3"><a href="#profile_experience">Experience</a></li>
-            <li class="tab col s3"><a href="#profile_interest">Interest</a></li>
-        </ul>
-    </div>
-    <div id="profile_background" class="col s12">Background</div>
-    <div id="profile_company" class="col s12">Company</div>
-    <div id="profile_education" class="col s12">Education</div>
-    <div id="profile_skills" class="col s12">Skills</div>
-    <div id="profile_experience" class="col s12">Experience</div>
-    <div id="profile_interest" class="col s12">Interest</div>
-</div>
+<tabset justified="true">
+    <tab heading="Background">
+        <section class="tab-contents">
+            <div class="row">
+                <div class="col-md-4">
+                    <form-field record="data.background" field="fullname" fieldtype="text" required="true" label="Full Name"></form-field>
+                    <form-field record="data.background" field="ic_number" fieldtype="text" required="true" label="IC Number"></form-field>
+                    <form-field record="data.background" field="email" fieldtype="text" required="true" label="Email Address"></form-field>
+                    <form-field record="data.background" field="phone" fieldtype="text" required="true" label="Phone Number"></form-field>
+                    <form-field record="data.background" field="gender" fieldtype="dropdown" required="true" label="Gender" options="selections.gender"></form-field>
+                </div>
+                <div class="col-md-4">
+                    <form-field record="data.background" field="address" fieldtype="text" required="true" label="Address"></form-field>
+                    <form-field record="data.background" field="postcode" fieldtype="text" required="true" label="Postcode"></form-field>
+                    <form-field record="data.background" field="state" fieldtype="text" required="true" label="State"></form-field>
+                    <form-field record="data.background" field="country" fieldtype="text" required="true" label="Country"></form-field>
+                    <form-field record="data.background" field="dob" fieldtype="date" required="true" label="Date Of Birth"></form-field>
+                </div>
+            </div>
+        </section>
+    </tab>
+    <tab heading="Company">Company Form</tab>
+    <tab heading="Education">Education Form</tab>
+    <tab heading="Skills">Skills Form</tab>
+    <tab heading="Experience">Experience Form</tab>
+</tabset>

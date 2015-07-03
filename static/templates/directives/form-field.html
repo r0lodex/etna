@@ -1,0 +1,24 @@
+<div class="form-group">
+	<!-- NORMAL TEXT FIELD -->
+	<span ng-if="fieldtype == 'text'">
+		<label>{{ label }}</label>
+	    <input type="text" ng-model="record[field]" class="form-control">
+	</span>
+
+	<!-- DROPDOWN FIELD -->
+	<span ng-if="fieldtype == 'dropdown'">
+		<label>{{ label }}</label>
+		<select class="form-control"
+			ng-model="record[field]"
+			ng-options="option.id as option.name for option in options">
+		</select>
+	</span>
+
+	<!-- DATE FIELD -->
+	<span ng-if="fieldtype == 'date'">
+		<label>{{ label }}</label>
+		<datepick date-format="dd MMMM y">
+			<input type="text" ng-model="record[field]" required="true" class="form-control">
+		</datepick>
+	</span>
+</div>

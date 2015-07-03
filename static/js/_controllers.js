@@ -9,7 +9,9 @@ angular.module('etna')
 		$scope.sort = function(field) {
 			$scope.sort.field = field;
 			$scope.sort.order = !$scope.sort.order;
-		}
+		};
+
+		// Generic Date Parser
 		$scope.date = function(str) {
 			var a = Date.parse(str)
 			return moment(a).format('DD MMM YYYY');
@@ -20,23 +22,44 @@ angular.module('etna')
 	.controller('sidebarCtrl', ['$log', '$scope', 'User', function($log, $scope, User) {
 		// The purpose of this controller is to
 		// populate user's data and display it in the sidebar
-		$log.info(JSON.stringify(User));
 		$scope.userdata = User.query();
+		$scope.navigation = [
+			{ name: 'dashboard', icon: 'blackboard' },
+			{ name: 'profile', icon: 'v-card' },
+			{ name: 'courses', icon: 'book' },
+			{ name: 'assessment', icon: 'graduation-cap' },
+			{ name: 'report', icon: 'bar-graph' }
+		]
 	}])
 
-	.controller('dashboardCtrl', ['$log', '$scope', 'CourseSummary', function($log, $scope, CourseSummary) {
+	.controller('dashboardCtrl', ['$log', '$scope', 'CourseSummary', 'ChartData', function($log, $scope, CourseSummary, ChartData) {
 		CourseSummary.query(function(response) {
 			$scope.summary = {
 				fields: Object.keys(response[0]),
 				data: response
 			}
 		});
+
+		// Chart Data
+		ChartData.query(function(response) {
+			$scope.score_card = response.score_card;
+			$scope.skill_chart = response.skill_chart;
+			$scope.ass = response.assessment;
+		});
 	}])
 
 	// Profile Controller
-	.controller('profileCtrl', ['$log', '$scope', function($log, $scope) {
+	.controller('profileCtrl', ['$log', '$scope', 'User', function($log, $scope, User) {
 		$log.info('personal')
-		$scope.showTabs = true
+
+		$scope.selections = {
+			gender: [
+				{id: 1, name:'Male' },
+				{id: 2, name:'Female' }
+			]
+		}
+
+		$scope.data = User.query();
 	}])
 
 	// Course Controller
