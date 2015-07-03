@@ -1,4 +1,6 @@
 angular.module('etna')
+
+	// Root Controller
 	.controller('rootCtrl', ['$log', '$scope', 'amMoment', function($log, $scope, amMoment) {
 		// This is the parent controller of every controller below
 		$log.info('root');
@@ -14,6 +16,7 @@ angular.module('etna')
 		}
 	}])
 
+	// Sidebar Controller
 	.controller('sidebarCtrl', ['$log', '$scope', 'User', function($log, $scope, User) {
 		// The purpose of this controller is to
 		// populate user's data and display it in the sidebar
@@ -30,19 +33,23 @@ angular.module('etna')
 		});
 	}])
 
+	// Profile Controller
 	.controller('profileCtrl', ['$log', '$scope', function($log, $scope) {
 		$log.info('personal')
 		$scope.showTabs = true
 	}])
 
+	// Course Controller
 	.controller('courseCtrl', ['$log', '$scope', function($log, $scope) {
 		$log.info('course')
 	}])
 
+	// Assessment Controller
 	.controller('assessmentCtrl', ['$log', '$scope', function($log, $scope) {
 		$log.info('assessment')
 	}])
 
+	// Report Controller
 	.controller('reportCtrl', ['$log', '$scope', function($log, $scope) {
 		$log.info('report')
 	}])
