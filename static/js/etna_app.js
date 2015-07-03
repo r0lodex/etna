@@ -50,8 +50,6 @@ var etna = angular.module('etna', [
 .filter('labelCase', function() {
 	return function(input) {
 		input = input.replace(/_/g, ' ');
-		// var k = input[0].toUpperCase() + input.slice(1);
-			// k.replace('/_/g', ' ');
 		return input;
 	}
 })
