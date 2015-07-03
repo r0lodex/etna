@@ -10,3 +10,9 @@ angular.module('etna')
 			query: { method: 'GET', isArray: true }
 		})
 	}])
+
+	.factory('ChartData', ['$resource', function($resource) {
+		return $resource('/static/fixtures/chartdata.json', {}, {
+			query: { method: 'GET', isArray: false }
+		})
+	}])

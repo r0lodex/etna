@@ -1,4 +1,20 @@
 {
-	"image" : "/static/img/profilepic.png",
-	"name" : "Muhammad Sobirin bin Kamaruzaman"
+	"background": {
+		"avatar" : "/static/img/profilepic.png",
+		"fullname" : "Muhammad Sobirin bin Kamaruzaman",
+		"ic_number": "901114-14-5717",
+		"gender": 1,
+		"dob": "14 November 1990",
+		"address": "NO 80 JALAN RAYA 6, TAMAN SERDANG JAYA, SERI KEMBANGAN",
+		"country": "Malaysia",
+		"state": "Selangor",
+		"postcode": 4330,
+		"email": "zobrin90@gmail.com",
+		"phone": "013-2378517"
+	},
+	"company": {},
+	"education": {},
+	"skills": {},
+	"experience": {},
+	"interest": {}
 }
