@@ -1,4 +1,3 @@
 #ETNA Dashboard UI Design
----
-Based on Material Design.
-Icons can be found here https://www.google.com/design/icons/
+- UI Bootstrap Docs: https://angular-ui.github.io/bootstrap/
+- Angular-Chart Docs: http://jtblin.github.io/angular-chart.js/ & http://chartjs.org/docs
