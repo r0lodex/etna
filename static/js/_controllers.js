@@ -30,8 +30,9 @@ angular.module('etna')
 		});
 	}])
 
-	.controller('personalCtrl', ['$log', '$scope', function($log, $scope) {
+	.controller('profileCtrl', ['$log', '$scope', function($log, $scope) {
 		$log.info('personal')
+		$scope.showTabs = true
 	}])
 
 	.controller('courseCtrl', ['$log', '$scope', function($log, $scope) {
