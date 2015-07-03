@@ -14582,6 +14582,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/static\/fixtures\/coursesummary.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/fixtures\/coursesummary.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/static\/fixtures\/coursesummary-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/static\/fixtures\/user.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/fixtures\/user.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/static\/fixtures\/user-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/static\/img\/bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -14730,11 +14752,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/static\/templates\/personal.html": {
+	"\/static\/templates\/profile.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/static\/templates\/personal.html",
+		"inputAbbreviatedPath": "\/static\/templates\/profile.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
