@@ -24,9 +24,9 @@ var etna = angular.module('etna', [
 			templateUrl: '../static/templates/dashboard.html',
 			controller: 'dashboardCtrl'
 		})
-		.when('/personal', {
-			templateUrl: '../static/templates/personal.html',
-			controller: 'personalCtrl'
+		.when('/profile', {
+			templateUrl: '../static/templates/profile.html',
+			controller: 'profileCtrl'
 		})
 		.when('/courses', {
 			templateUrl: '../static/templates/courses.html',
