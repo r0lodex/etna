@@ -1,61 +1,110 @@
-@import '../../bower_components/materialize/sass/materialize';
-@import '../../bower_components/angular-materialize/css/style.css';
+@import "../../bower_components/boostrap-sass/assets/stylesheets/bootstrap";
 @import '../../bower_components/angular-chart.js/dist/angular-chart.css';
+@import "../../bower_components/angularjs-datepicker/src/css/angular-datepicker.css";
+@import "global";
 
-body { background: url(../img/bg.png); }
-
-.brand-logo { margin-left: 10px; }
-
-.content { padding-top: 40px; }
-
-#login-form {
-	background: #FFF;
-	padding: 20px;
-	width: 400px;
-	margin: 0 auto;
-	border-radius: 5px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.2);
-}
-
-table th { text-transform: capitalize; }
-
-$sidebarwidth: 180px;
+$sidebar: 200px;
 #sidebar {
-	background: $primary-color;
+	display: none;
+	@media (min-width: 768px) { display: block; }
 	position: fixed;
 	left: 0;
-	width: $sidebarwidth;
 	height: 100%;
-
+	background: $grey-3;
+	top: 0;
+	width: $sidebar;
+	overflow: auto;
 	.profile-info {
+		text-align: center;
 		padding: 20px;
-		img {
-			width: 100%;
+		img { width: 60%; }
+		p {
+			@extend .font-bold;
+			display: block;
+			margin-top: 10px;
+			color: $grey-2;
 		}
+	}
+	.links {
+		li.active a { color: #FFF; background: $brand-primary; }
+		a {
+			text-transform: capitalize;
+			color: $grey-1;
+			display: block;
+			padding: 15px 20px;
+			.icon { margin-right: 5px; }
+			&:hover, &:focus {
+				text-decoration: none;
+				background: rgba($brand-primary, 0.3);
+			}
+		}
+	}
+}
+
+
+// CONTENT ELEMENTS
+// =========================
+#content {
+	@media (min-width: 768px) { padding-left: $sidebar + 20; }
+	padding: 10px 20px 50px;
+}
+
+// Cards: General
+	@mixin cards-header($background) {
+		// @extend .font-bold;
+		background: darken($background, 10%);
+		text-align: center;
+		padding: 10px;
+		font-size: 1.2em;
 		color: #FFF;
 	}
 
-	.links {
-		a {
-			color: #FFF;
-			display: block;
+	.cards {
+		background: lighten($grey-1, 10%);
+		box-shadow: 0 3px 2px rgba(#000, 0.2);
+		min-height: 270px;
+		position: relative;
+		padding-bottom: 10px;
+		text-align: center;
+
+		.cards-header { @include cards-header(lighten($grey-1, 10%)); }
+		.cards-content {
+			padding: 10px 10px 20px 10px;
+			canvas { margin: 10px 0; }
+		}
+		.cards-footer {
+			position: absolute;
+			width: 100%;
 			padding: 10px;
-			position: relative;
-			&:hover, &.active {
-				background: color('blue', 'lighten-4');
-				color: $primary-color;
-			}
-			 &.active {
-			 	background: color('blue', 'darken-4');
-			 }
+			bottom: 0;
+			background: rgba(#FFF, 0.5);
+		}
+		.table { text-align: left; }
+		.table tr th { border-bottom-color: rgba(#000, 0.1); }
+		.table tr td { border-top-color: rgba(#000, 0.1); }
+
+		// Cards Variant
+		&.cards-default {
+			background: #FFF;
+		}
+		&.cards-dark {
+			background: #FFF;
+			.cards-header { @include cards-header($brand-success); }
+		}
+		&.cards-primary {
+			background: #FFF;
+			.cards-header { @include cards-header($brand-primary); }
+
 		}
 	}
-}
 
-#content {
-	margin-left: $sidebarwidth;
-	padding: 20px;
-	.content-title {
-		margin-top: 0;
+// Tabs And Tabs Content
+	.tab-content {
+		box-shadow: 0 3px 1px rgba(#000, 0.1);
+		padding: 20px;
+		background: #FFF;
+		border: 1px solid #DDD;
+		@media (min-width: 768px) { border-top: none; }
+		min-height: 300px;
 	}
-}
+
