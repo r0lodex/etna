@@ -1,10 +1,12 @@
 angular.module('etna')
-	.factory('User', function() {
-		return obj = {
-			image : '/static/img/profilepic.png',
-			name : 'Muhammad Sobirin bin Kamaruzaman'
-		};
-	})
-	.factory('CourseSummary', function() {
-		return courseobj;
-	})
+	.factory('User', ['$resource', function($resource) {
+		return $resource('/static/fixtures/user.json', {}, {
+			query: { method: 'GET', isArray: false }
+		})
+	}])
+
+	.factory('CourseSummary', ['$resource', function($resource) {
+		return $resource('/static/fixtures/coursesummary.json', {}, {
+			query: { method: 'GET', isArray: true }
+		})
+	}])

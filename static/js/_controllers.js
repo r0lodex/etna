@@ -18,15 +18,16 @@ angular.module('etna')
 		// The purpose of this controller is to
 		// populate user's data and display it in the sidebar
 		$log.info(JSON.stringify(User));
-		$scope.userdata = User;
+		$scope.userdata = User.query();
 	}])
 
 	.controller('dashboardCtrl', ['$log', '$scope', 'CourseSummary', function($log, $scope, CourseSummary) {
-		$scope.summary = {
-			fields: Object.keys(CourseSummary[0]),
-			data: CourseSummary
-		}
-		$log.info($scope.summary.fields)
+		CourseSummary.query(function(response) {
+			$scope.summary = {
+				fields: Object.keys(response[0]),
+				data: response
+			}
+		});
 	}])
 
 	.controller('personalCtrl', ['$log', '$scope', function($log, $scope) {
