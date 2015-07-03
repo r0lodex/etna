@@ -41,7 +41,7 @@ var etna = angular.module('etna', [
 			controller: 'reportCtrl'
 		})
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/dashboard'
 		}
 	);
 }])
