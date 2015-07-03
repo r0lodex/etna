@@ -1,9 +1,8 @@
 @import '../../bower_components/materialize/sass/materialize';
 @import '../../bower_components/angular-materialize/css/style.css';
+@import '../../bower_components/angular-chart.js/dist/angular-chart.css';
 
-body {
-	background: url(../img/bg.png);
-}
+body { background: url(../img/bg.png); }
 
 .brand-logo { margin-left: 10px; }
 

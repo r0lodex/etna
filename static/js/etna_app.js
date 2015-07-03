@@ -8,7 +8,8 @@ var etna = angular.module('etna', [
 	'ngResource',
 	'ngCookies',
 	'ui.materialize',
-	'angularMomentHijri'
+	'angularMomentHijri',
+	'chart.js'
 ])
 
 .run(['$rootScope', '$location', function($rootScope, $location) {
