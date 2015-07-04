@@ -5666,7 +5666,12 @@ html, body {
 
 body {
   font-family: 'rudaregular';
-  background: url(../img/bg.png); }
+  background: url(../img/bg.png);
+  padding-top: 60px; }
+
+nav.navbar-inverse {
+  background: #4e5758;
+  border-bottom: none; }
 
 .table tr th {
   white-space: nowrap;
@@ -5684,7 +5689,10 @@ body {
 .form-group label {
   color: #bdc3c7; }
 
-.font-bold, #sidebar .profile-info p {
+.nav-tabs li a {
+  white-space: nowrap; }
+
+.font-bold {
   font-family: 'rudabold', 'Arial', sans-serif; }
 
 .font-black {
@@ -6857,27 +6865,50 @@ body {
 .icon-youtube:before {
   content: "\e780"; }
 
+.navbar .profile a {
+  position: relative;
+  white-space: nowrap; }
+.navbar .profile img {
+  width: 50px;
+  left: 10px;
+  top: 0;
+  position: absolute;
+  display: none; }
+@media (min-width: 768px) {
+  .navbar .profile {
+    margin-left: 195px; }
+    .navbar .profile img {
+      display: block; }
+    .navbar .profile a {
+      padding-left: 70px; } }
+
 #sidebar {
   display: none;
   position: fixed;
   left: 0;
+  top: 0;
   height: 100%;
   background: #22242a;
-  top: 0;
   width: 200px;
-  overflow: auto; }
+  overflow: auto;
+  z-index: 1031; }
   @media (min-width: 768px) {
     #sidebar {
       display: block; } }
-  #sidebar .profile-info {
+  #sidebar .brand {
+    background: #7f8c8d;
+    height: 50px;
+    font-size: 3em;
+    color: #22242a;
     text-align: center;
-    padding: 20px; }
-    #sidebar .profile-info img {
-      width: 60%; }
-    #sidebar .profile-info p {
-      display: block;
-      margin-top: 10px;
-      color: #7f8c8d; }
+    position: relative; }
+    #sidebar .brand span {
+      position: relative;
+      top: -5px; }
+      #sidebar .brand span .icon {
+        font-size: 0.8em;
+        position: relative;
+        top: 2px; }
   #sidebar .links li.active a {
     color: #FFF;
     background: #37c3b9; }
@@ -6900,17 +6931,19 @@ body {
 
 .cards {
   background: #d9dcde;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
   min-height: 270px;
   position: relative;
   padding-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center; }
   .cards .cards-header {
     background: #bdc3c7;
     text-align: center;
     padding: 10px;
     font-size: 1.2em;
-    color: #FFF; }
+    color: #FFF;
+    margin-top: 0; }
   .cards .cards-content {
     padding: 10px 10px 20px 10px; }
     .cards .cards-content canvas {
@@ -6936,7 +6969,8 @@ body {
       text-align: center;
       padding: 10px;
       font-size: 1.2em;
-      color: #FFF; }
+      color: #FFF;
+      margin-top: 0; }
   .cards.cards-primary {
     background: #FFF; }
     .cards.cards-primary .cards-header {
@@ -6944,7 +6978,8 @@ body {
       text-align: center;
       padding: 10px;
       font-size: 1.2em;
-      color: #FFF; }
+      color: #FFF;
+      margin-top: 0; }
 
 .tab-content {
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
@@ -6955,3 +6990,32 @@ body {
   @media (min-width: 768px) {
     .tab-content {
       border-top: none; } }
+
+.avatar-info {
+  padding-top: 50px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.profile-action {
+  margin-bottom: 20px; }
+
+span[class*="status-"] {
+  display: inline-block;
+  background: #000;
+  color: #FFF;
+  font-size: 0.8em;
+  width: 60px;
+  text-align: center;
+  padding: 2px 5px;
+  text-transform: uppercase; }
+
+span.status-rejected {
+  background: #FF6B6B; }
+
+span.status-passed {
+  background: #5cb85c; }
+
+span.status-pending {
+  background: #7f8c8d; }

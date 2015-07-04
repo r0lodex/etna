@@ -49,17 +49,42 @@ angular.module('etna')
 	}])
 
 	// Profile Controller
-	.controller('profileCtrl', ['$log', '$scope', 'User', function($log, $scope, User) {
-		$log.info('personal')
+	.controller('profileCtrl', ['$log', '$scope', 'User', 'Upload', function($log, $scope, User, Upload) {
 
+		// This object is to populate selection items.
 		$scope.selections = {
 			gender: [
 				{id: 1, name:'Male' },
 				{id: 2, name:'Female' }
+			],
+			position_level : [
+				{id: 1, name:'Junior' },
+				{id: 2, name:'Non-Executive' },
+				{id: 3, name:'Executive' },
+				{id: 4, name:'Manager' }
 			]
-		}
+		};
 
 		$scope.data = User.query();
+
+		$scope.upload = function(files) {
+			if (files && files.length) {
+				for (var i = 0; i < files.length; i++) {
+	                var file = files[i];
+	                Upload.upload({
+	                    url: '/api/user_profile/',
+	                    method: 'PUT',
+	                    file: file,
+	                    fileFormDataName: 'avatar'
+	                });
+	            }
+			}
+		};
+
+		$scope.dummySave = false;
+		$scope.save = function() {
+			$scope.dummySave = true;
+		}
 	}])
 
 	// Course Controller

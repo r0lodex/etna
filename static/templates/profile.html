@@ -1,7 +1,19 @@
+<ul class="profile-action list-inline">
+    <li><button ng-click="save();" class="btn btn-info"><i class="icon icon-save"></i> Save Changes</a></li>
+    <li><button ng-click="download();" class="btn btn-default"><i class="icon icon-share"></i> Download Profile as PDF</a></li>
+</ul>
+
 <tabset justified="true">
-    <tab heading="Background">
+    <tab heading="Personal Details">
         <section class="tab-contents">
             <div class="row">
+                <div class="col-md-4">
+                    <div class="avatar-info">
+                        <img class="" ng-src="{{ data.background.avatar }}" width="90%">
+                        <hr>
+                        <small><a ngf-select ngf-change="upload($files)">Change Profile Picture</a></small>
+                    </div>
+                </div>
                 <div class="col-md-4">
                     <form-field record="data.background" field="fullname" fieldtype="text" required="true" label="Full Name"></form-field>
                     <form-field record="data.background" field="ic_number" fieldtype="text" required="true" label="IC Number"></form-field>
@@ -19,8 +31,37 @@
             </div>
         </section>
     </tab>
-    <tab heading="Company">Company Form</tab>
+    <tab heading="Company">
+        <section class="tab-contents">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Current Position</h3>
+                    <hr>
+                    <form-field record="data.company.current_position" field="title" fieldtype="text" required="true" label="Job Title"></form-field>
+                    <form-field record="data.company.current_position" field="department" fieldtype="text" required="true" label="Department"></form-field>
+                    <form-field record="data.company.current_position" field="level" fieldtype="dropdown" required="true" label="Position Level" options="selections.position_level"></form-field>
+                    <form-field record="data.company.current_position" field="industry" fieldtype="text" required="true" label="Industry"></form-field>
+                </div>
+                <div class="col-md-6">
+                    <h3>Company Information</h3>
+                    <hr>
+                    <form-field record="data.company" field="name" fieldtype="text" required="true" label="Company Name"></form-field>
+                    <form-field record="data.company" field="address" fieldtype="text" required="true" label="Address"></form-field>
+                    <form-field record="data.company" field="state" fieldtype="text" required="true" label="State"></form-field>
+                    <form-field record="data.company" field="country" fieldtype="text" required="true" label="Country"></form-field>
+                    <form-field record="data.company" field="website" fieldtype="text" required="true" label="Website URL"></form-field>
+                    <form-field record="data.company" field="phone" fieldtype="text" required="true" label="Office Phone"></form-field>
+                    <form-field record="data.company" field="fax" fieldtype="text" required="true" label="Office Fax"></form-field>
+                </div>
+            </div>
+        </section>
+    </tab>
+    <tab heading="Past Experiences">Experience Form</tab>
     <tab heading="Education">Education Form</tab>
     <tab heading="Skills">Skills Form</tab>
-    <tab heading="Experience">Experience Form</tab>
 </tabset>
+
+<div ng-show="dummySave">
+    <hr>
+    <pre>{{ data | json }}</pre>
+</div>

@@ -12,7 +12,22 @@
 		"email": "zobrin90@gmail.com",
 		"phone": "013-2378517"
 	},
-	"company": {},
+	"company": {
+		"name": "Fiscal Digest Sdn Bhd",
+		"address": "B-2-8, BLOCK B, JALAN GC 3, GLOMAC CYBERJAYA",
+		"country": "Malaysia",
+		"state": "Selangor",
+		"postcode": 4330,
+		"phone": "03-83119325",
+		"fax": "03-62045776",
+		"website": "http://www.fiscald.com",
+		"current_position": {
+			"title": "Business Analyst",
+			"department": "Information Technology",
+			"level": 3,
+			"industry": "Consulting (Information Technology)"
+		}
+	},
 	"education": {},
 	"skills": {},
 	"experience": {},
