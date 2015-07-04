@@ -37,13 +37,15 @@ angular.module('etna')
 		]
 	}])
 
-	.controller('dashboardCtrl', ['$log', '$scope', 'CourseSummary', 'ChartData', function($log, $scope, CourseSummary, ChartData) {
+	.controller('dashboardCtrl', ['$log', '$scope', 'Courses', 'CourseSummary', 'ChartData', function($log, $scope, Courses, CourseSummary, ChartData) {
 		CourseSummary.query(function(response) {
 			$scope.summary = {
 				fields: Object.keys(response[0]),
 				data: response
 			}
 		});
+
+		$scope.courses = Courses.query();
 
 		// Chart Data
 		ChartData.query(function(response) {

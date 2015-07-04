@@ -1,3 +1,25 @@
+<!-- Latest Courses -->
+<div class="cards">
+	<h1 class="cards-header">Latest Courses</h1>
+	<div class="cards-content">
+		<div class="row">
+			<div ng-repeat="course in courses | limitTo:4" class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<div class="cards cards-primary">
+					<h1 class="cards-header text-capitalize" ng-bind="course.course_name"></h1>
+					<img ng-src="{{ course.course_image }}">
+					<div class="cards-content">
+						<small class="min-desc" ng-bind="course.course_description"></small>
+					</div>
+					<div class="cards-footer">
+						<a href="#" class="btn btn-info btn-sm">Enroll This Course</a>
+						<a href="#" class="btn btn-default btn-sm">View Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="row">
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 		<div class="cards cards-primary">
@@ -30,7 +52,6 @@
 		</div>
 	</div>
 </div>
-
 
 <div class="cards">
 	<h1 class="cards-header">Course Application Summary</h1>
