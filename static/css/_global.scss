@@ -49,6 +49,7 @@ html, body { height: 100%; }
 body {
 	font-family: 'rudaregular';
 	background: url(../img/bg.png);
+	padding-top: 60px;
 }
 
 // Colors
@@ -58,6 +59,10 @@ $grey-3: #22242a;
 
 // CUSTOMIZED BOOTSTRAPSs
 // ===============================
+nav.navbar-inverse {
+	background: darken($grey-2, 20%);
+	border-bottom: none;
+}
 .table {
 	tr th {
 		white-space: nowrap;
@@ -75,6 +80,7 @@ $grey-3: #22242a;
 
 .btn { border-radius: 0; }
 .form-group label { color: $grey-1 }
+.nav-tabs li a { white-space: nowrap; }
 
 // ===============================
 
