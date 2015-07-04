@@ -1,9 +1,9 @@
 .ui-notification {
     position: fixed;
-    z-index: 1500;
+    z-index: 1029;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    width: 250px;
+    width: 300px;
     text-align: center;
     color: $btn-primary-color;
     background: #FFF;
@@ -34,10 +34,12 @@
         color: $brand-warning;
     }
     &.error {
-        color: $brand-danger;
+        background: $brand-danger;
+        color: #FFF;
     }
     &.success {
-        color: $brand-success;
+        color: #FFF;
+        background: $brand-primary;
     }
     &.info {
         color: $brand-info;

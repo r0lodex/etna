@@ -5637,6 +5637,50 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.ui-notification {
+  position: fixed;
+  z-index: 1029;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  background: #FFF;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+  .ui-notification.killed {
+    opacity: 0;
+    -webkit-transition: opacity ease 1s;
+    -o-transition: opacity ease 1s;
+    transition: opacity ease 1s; }
+  .ui-notification > h3 {
+    display: block;
+    margin: 10px 10px 0 10px;
+    padding: 0 0 5px 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid fadeout(#fff, 70%); }
+  .ui-notification a {
+    color: #fff; }
+    .ui-notification a:hover {
+      text-decoration: underline; }
+  .ui-notification > .message {
+    margin: 10px 10px 10px 10px; }
+  .ui-notification.warning {
+    color: #FCB322; }
+  .ui-notification.error {
+    background: #FF6B6B;
+    color: #FFF; }
+  .ui-notification.success {
+    color: #FFF;
+    background: #37c3b9; }
+  .ui-notification.info {
+    color: #5bc0de; }
+  .ui-notification:hover {
+    opacity: 0.7; }
+
 @font-face {
   font-family: 'rudablack';
   src: url("fonts/ruda-black-webfont.eot");
@@ -6937,6 +6981,11 @@ nav.navbar-inverse {
   padding-bottom: 10px;
   margin-bottom: 20px;
   text-align: center; }
+  .cards img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -10px; }
   .cards .cards-header {
     background: #bdc3c7;
     text-align: center;
@@ -6948,12 +6997,23 @@ nav.navbar-inverse {
     padding: 10px 10px 20px 10px; }
     .cards .cards-content canvas {
       margin: 10px 0; }
+    .cards .cards-content .min-desc {
+      display: block;
+      display: -webkit-box;
+      max-width: 400px;
+      height: 4.2em;
+      margin: 0 auto;
+      line-height: 1.4;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .cards .cards-footer {
     position: absolute;
     width: 100%;
     padding: 10px;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(255, 255, 255, 0.8); }
   .cards .table {
     text-align: left; }
   .cards .table tr th {

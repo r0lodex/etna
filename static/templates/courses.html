@@ -1,1 +1,17 @@
-<h3 class="content-title blue-text"><i class="mdi-communication-clear-all"></i> Courses</h3>
+<h3 class="text-muted text-center">Select A Course To Enroll.</h3>
+<hr>
+<div class="row">
+	<div ng-repeat="course in courses" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="cards cards-primary">
+			<h1 class="cards-header text-capitalize" ng-bind="course.course_name"></h1>
+			<img ng-src="{{ course.course_image }}">
+			<div class="cards-content">
+				<small class="min-desc" ng-bind="course.course_description"></small>
+			</div>
+			<div class="cards-footer">
+				<a href="#" class="btn btn-info btn-sm">Enroll This Course</a>
+				<a href="#" class="btn btn-default btn-sm">View Details</a>
+			</div>
+		</div>
+	</div>
+</div>

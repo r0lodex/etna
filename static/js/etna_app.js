@@ -8,6 +8,7 @@ var etna = angular.module('etna', [
 	'ngResource',
 	'ngCookies',
 	'ui.bootstrap',
+	'ui-notification',
 	'angularMomentHijri',
 	'720kb.datepicker',
 	'chart.js',

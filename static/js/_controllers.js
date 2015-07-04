@@ -1,7 +1,7 @@
 angular.module('etna')
 
 	// Root Controller
-	.controller('rootCtrl', ['$log', '$scope', 'amMoment', function($log, $scope, amMoment) {
+	.controller('rootCtrl', ['$log', '$scope', 'amMoment', 'Notification', function($log, $scope, amMoment, Notification) {
 		// This is the parent controller of every controller below
 		$log.info('root');
 
@@ -16,6 +16,11 @@ angular.module('etna')
 			var a = Date.parse(str)
 			return moment(a).format('DD MMM YYYY');
 		}
+
+		// Events
+		$scope.$on('profile:saved', function() {
+			Notification.success('Profile has been successfully updated')
+		})
 	}])
 
 	// Sidebar Controller
@@ -84,12 +89,13 @@ angular.module('etna')
 		$scope.dummySave = false;
 		$scope.save = function() {
 			$scope.dummySave = true;
+			$scope.$emit('profile:saved');
 		}
 	}])
 
 	// Course Controller
-	.controller('courseCtrl', ['$log', '$scope', function($log, $scope) {
-		$log.info('course')
+	.controller('courseCtrl', ['$log', '$scope', 'Courses', function($log, $scope, Courses) {
+		$scope.courses = Courses.query();
 	}])
 
 	// Assessment Controller

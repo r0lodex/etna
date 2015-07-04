@@ -1,6 +1,7 @@
 @import "../../bower_components/boostrap-sass/assets/stylesheets/bootstrap";
 @import '../../bower_components/angular-chart.js/dist/angular-chart.css';
 @import "../../bower_components/angularjs-datepicker/src/css/angular-datepicker.css";
+@import "../../bower_components/angular-ui-notification/src/angular-ui-notification";
 @import "global";
 
 $sidebar: 200px;
@@ -98,17 +99,27 @@ $sidebar: 200px;
 		margin-bottom: 20px;
 		text-align: center;
 
+		img {
+				display: block;
+				width: 100%;
+				position: relative;
+				top: -10px;
+			}
+
 		.cards-header { @include cards-header(lighten($grey-1, 10%)); }
 		.cards-content {
 			padding: 10px 10px 20px 10px;
 			canvas { margin: 10px 0; }
+			.min-desc {
+				@include multiline-ellipsis(1em, 1.4, 3);
+			}
 		}
 		.cards-footer {
 			position: absolute;
 			width: 100%;
 			padding: 10px;
 			bottom: 0;
-			background: rgba(#FFF, 0.5);
+			background: rgba(#FFF, 0.8);
 		}
 		.table { text-align: left; }
 		.table tr th { border-bottom-color: rgba(#000, 0.1); }

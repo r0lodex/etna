@@ -11,6 +11,12 @@ angular.module('etna')
 		})
 	}])
 
+	.factory('Courses', ['$resource', function($resource) {
+		return $resource('/static/fixtures/courses.json', {}, {
+			query: { method: 'GET', isArray: true }
+		})
+	}])
+
 	.factory('ChartData', ['$resource', function($resource) {
 		return $resource('/static/fixtures/chartdata.json', {}, {
 			query: { method: 'GET', isArray: false }

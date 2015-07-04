@@ -1,0 +1,122 @@
+[
+  {
+    "code": 153,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "aute do labore",
+    "course_description": "Commodo esse aliqua officia occaecat. Est cupidatat in consectetur deserunt fugiat veniam nulla ipsum occaecat ea velit do. Proident non aute ex mollit labore elit laboris eu ipsum dolore. Cillum sit consequat dolore et cupidatat sint fugiat.\r\n",
+    "core_competency": "Microsoft Office",
+    "skills": "Communication",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Putrajaya",
+    "course_type": 2
+  },
+  {
+    "code": 573,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "magna irure minim",
+    "course_description": "Laboris incididunt magna dolore aliqua dolore reprehenderit. Adipisicing laborum consectetur ex veniam labore. Consectetur anim minim est amet incididunt ipsum Lorem non laboris duis laborum id. Sint exercitation ipsum cupidatat occaecat minim pariatur mollit consequat qui.\r\n",
+    "core_competency": "Communication",
+    "skills": "Adobe CS5",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 3
+  },
+  {
+    "code": 873,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "et elit fugiat",
+    "course_description": "Irure elit laborum consequat pariatur fugiat aliquip ut cillum sit aliquip est est laboris. Est magna excepteur nulla reprehenderit Lorem duis officia. Velit ad laboris eiusmod enim duis culpa nostrud cillum incididunt reprehenderit tempor irure occaecat in.\r\n",
+    "core_competency": "Python",
+    "skills": "Adobe CS5",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 3
+  },
+  {
+    "code": 437,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "eu sint qui",
+    "course_description": "Est culpa duis aliquip laborum ullamco laborum exercitation eiusmod fugiat irure anim id. Incididunt ullamco dolore culpa aliquip minim et elit cupidatat nisi consequat duis sit. Culpa consequat excepteur non nisi dolor tempor non laboris do ut enim culpa. Est aliquip qui nulla nostrud proident ullamco. Et id irure Lorem ad aliquip. Ea pariatur aliquip laborum sit ea dolor nostrud. Voluptate tempor cillum enim aliqua nisi voluptate non ex consectetur.\r\n",
+    "core_competency": "Adobe",
+    "skills": "Microsoft Access 2007",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 1
+  },
+  {
+    "code": 650,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "enim laboris amet",
+    "course_description": "Qui nostrud culpa officia ipsum exercitation et est proident voluptate aute. Tempor commodo pariatur anim officia et ea culpa consequat. Pariatur nulla dolor dolor officia aute deserunt sit veniam quis. Excepteur amet eu enim veniam do esse est nulla nostrud. Lorem voluptate adipisicing qui laborum voluptate enim minim id incididunt voluptate sit laborum in.\r\n",
+    "core_competency": "Javascript",
+    "skills": "Managerial Skills",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Putrajaya",
+    "course_type": 1
+  },
+  {
+    "code": 970,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "culpa nostrud est",
+    "course_description": "Amet officia adipisicing pariatur consectetur adipisicing in ad et consequat. Duis sunt esse nisi anim sunt fugiat adipisicing elit. Ea pariatur mollit ad non velit culpa aute deserunt. Nisi sint deserunt Lorem nulla nulla elit laborum eiusmod qui consequat cupidatat anim ut incididunt. Commodo eu tempor velit proident. Cupidatat sunt mollit labore aliqua veniam laboris nulla aliqua do qui consectetur pariatur est.\r\n",
+    "core_competency": "Communication",
+    "skills": "Managerial Skills",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 1
+  },
+  {
+    "code": 831,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "fugiat ut id",
+    "course_description": "Ullamco amet adipisicing labore eiusmod. Qui deserunt mollit nisi duis proident magna cillum est. Veniam excepteur ea eiusmod est dolore nisi. Exercitation ut tempor ipsum culpa esse. Sint esse aute ea minim et esse culpa do mollit ea sunt laboris laboris esse. Officia incididunt dolore adipisicing consequat excepteur culpa quis nostrud amet reprehenderit consequat.\r\n",
+    "core_competency": "Javascript",
+    "skills": "Managerial Skills",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 1
+  },
+  {
+    "code": 517,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "ad sint exercitation",
+    "course_description": "Mollit sint commodo laborum anim nulla ea officia sit. Nostrud minim commodo quis nisi duis ullamco commodo deserunt. Anim Lorem dolor velit excepteur sunt excepteur amet fugiat. Occaecat minim sit consectetur exercitation duis proident veniam aute do cillum proident ea cupidatat anim. Ipsum irure eu cillum dolor sunt minim. Tempor cupidatat consequat velit non aliquip non duis est consequat cillum aliqua do.\r\n",
+    "core_competency": "Microsoft Office",
+    "skills": "Managerial Skills",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Johor Bahru",
+    "course_type": 2
+  },
+  {
+    "code": 772,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "excepteur aliquip voluptate",
+    "course_description": "Commodo ad excepteur consectetur elit dolore magna. Ullamco officia in nisi mollit nisi esse nostrud et magna eiusmod eiusmod. Sunt eu commodo enim tempor esse laborum consequat exercitation aliqua sint aliqua exercitation magna.\r\n",
+    "core_competency": "Adobe",
+    "skills": "Managerial Skills",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "PWTC, KL",
+    "course_type": 2
+  },
+  {
+    "code": 418,
+    "course_image": "/static/img/placeholder_800x400.png",
+    "course_name": "exercitation ut veniam",
+    "course_description": "Mollit irure nulla in fugiat. Laboris est irure aute cupidatat Lorem dolore mollit aliquip pariatur ullamco labore duis minim esse. Ad est aliquip anim dolor.\r\n",
+    "core_competency": "Adobe",
+    "skills": "Project Management",
+    "from_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "till_date": "Sat Jul 04 2015 10:22:36 GMT+0000",
+    "venue": "Putrajaya",
+    "course_type": 1
+  }
+]
