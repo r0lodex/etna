@@ -10,7 +10,8 @@ var etna = angular.module('etna', [
 	'ui.bootstrap',
 	'angularMomentHijri',
 	'720kb.datepicker',
-	'chart.js'
+	'chart.js',
+	'ngFileUpload',
 ])
 
 .run(['$rootScope', '$location', function($rootScope, $location) {
@@ -51,14 +52,6 @@ var etna = angular.module('etna', [
 		}
 	);
 }])
-
-.directive('navigation', function() {
-	return {
-		restrict: 'E',
-		templateUrl: '/static/templates/directives/navigation.html',
-		replace: true
-	}
-})
 
 .directive('formField', function() {
 	return {
