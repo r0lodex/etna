@@ -3,7 +3,7 @@
 		<div class="cards cards-primary">
 			<h1 class="cards-header">Skills Profeciency</h1>
 			<div class="cards-content">
-				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<!-- <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small> -->
 				<canvas id="bar" class="chart chart-bar" data="skill_chart.data" labels="skill_chart.labels"></canvas>
 				<a class="btn btn-default btn-block">Start Skills Assessment</a>
 			</div>
@@ -13,7 +13,7 @@
 		<div class="cards cards-dark">
 			<h1 class="cards-header">Assessment Report</h1>
 			<div class="cards-content">
-				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<!-- <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small> -->
 				<canvas id="doughnut" class="chart chart-doughnut" data="ass.data" labels="ass.labels"></canvas>
 				<a class="btn btn-default btn-block">View Full Report</a>
 			</div>
@@ -23,7 +23,7 @@
 		<div class="cards cards-default">
 			<h1 class="cards-header">Score Card</h1>
 			<div class="cards-content">
-				<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small>
+				<!-- <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi animi, at magni molestias ex in a corrupti.</small> -->
 				<canvas id="radar" class="chart chart-radar" data="score_card.data" labels="score_card.labels"></canvas>
 				<a class="btn btn-default btn-block">View Score Card</a>
 			</div>
@@ -51,7 +51,7 @@
 						<td ng-repeat="field in summary.fields" class="row-{{ field }}">
 							<span ng-switch="field">
 								<span ng-switch-when="date">{{ date(item[field]) }}</span>
-								<span ng-switch-when="status" ng-class="status-{{ item[field] }}">{{ item[field] }}</span>
+								<span ng-switch-when="status" class="status-{{ item[field] }}">{{ item[field] }}</span>
 								<span ng-switch-default>{{ item[field] }}</span>
 							</span>
 						</td>
