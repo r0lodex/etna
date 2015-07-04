@@ -1,7 +1,10 @@
 <h3 class="text-muted text-center">Select A Course To Enroll.</h3>
+<div style="width:300px; margin: 0 auto;">
+	<input class="form-control" placeholder="Search Courses" ng-model="filter_course" style="text-align: center;">
+</div>
 <hr>
 <div class="row">
-	<div ng-repeat="course in courses" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<div ng-repeat="course in courses | filter: filter_course" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 		<div class="cards cards-primary">
 			<h1 class="cards-header text-capitalize" ng-bind="course.course_name"></h1>
 			<img ng-src="{{ course.course_image }}">
